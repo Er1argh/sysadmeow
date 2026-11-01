@@ -1,0 +1,50 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Gradle
+.gradle/
+build/
+**/build/
+captures/
+
+# Local machine settings
+local.properties
+
+# Firebase configuration
+app/google-services.json
+
+# Signing / keystores
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+# Generated / temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# APK / AAB outputs
+*.apk
+*.aab
+
+# Native / CMake generated
+.externalNativeBuild/
+.cxx/
+
+# Kotlin generated
+.kotlin/
+
+# VS Code
+.vscode/
+
+# Secrets / environment
+.env
+.env.*
+!.env.example

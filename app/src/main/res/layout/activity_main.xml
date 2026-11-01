@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" tools:theme="@style/Theme.SysAdMeow">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingHorizontal="18dp" android:paddingTop="18dp" android:paddingBottom="96dp">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="SysAdMeow" android:textColor="@color/text_main" android:textSize="28sp" android:textStyle="bold"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:gravity="center" android:text="Выберите кота, который разберётся с вашей сетью" android:textColor="@color/text_muted" android:textSize="13sp"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Категория задачи" android:textColor="@color/text_main" android:textStyle="bold"/>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCategories" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" tools:itemCount="5" tools:listitem="@layout/item_category"/>
+  <TextView android:id="@+id/tvFilterHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Фильтр: Все" android:textColor="@color/primary" android:textSize="12sp"/>
+  <TextView android:id="@+id/tvError" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="@drawable/bg_failure" android:padding="10dp" android:textColor="@color/danger" android:visibility="gone"/>
+  <TextView android:id="@+id/tvEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:gravity="center" android:text="В этой категории пока нет опубликованных котов.
+Попробуйте другой фильтр." android:textColor="@color/text_muted" android:visibility="gone"/>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvSpecialists" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_weight="1" android:clipToPadding="false" android:paddingBottom="8dp" tools:itemCount="3" tools:listitem="@layout/item_specialist"/>
+ </LinearLayout>
+ <include android:id="@+id/bottomNav" layout="@layout/layout_bottom_nav" android:layout_width="wrap_content" android:layout_height="72dp" android:layout_gravity="bottom|center_horizontal" android:layout_marginBottom="14dp"/>
+</FrameLayout>

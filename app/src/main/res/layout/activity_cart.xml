@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" tools:theme="@style/Theme.SysAdMeow">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingHorizontal="20dp" android:paddingTop="20dp" android:paddingBottom="100dp">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="Корзина" android:textColor="@color/text_main" android:textSize="28sp" android:textStyle="bold"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:gravity="center" android:text="Один специалист добавляется только один раз" android:textColor="@color/text_muted" android:textSize="13sp"/>
+  <TextView android:id="@+id/tvEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:gravity="center" android:text="Корзина пока пуста.
+Выберите кота в каталоге." android:textColor="@color/text_muted"/>
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCart" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="16dp" android:layout_weight="1" tools:itemCount="2" tools:listitem="@layout/item_cart"/>
+  <TextView android:id="@+id/tvTotal" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="end" android:text="Итого: 0 BYN" android:textColor="@color/text_main" android:textSize="22sp" android:textStyle="bold"/>
+  <Button android:id="@+id/btnCheckout" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="12dp" android:background="@drawable/bg_primary" android:backgroundTint="@null" android:text="Перейти к оформлению" android:textAllCaps="false" android:textColor="@color/white"/>
+ </LinearLayout>
+ <include android:id="@+id/bottomNav" layout="@layout/layout_bottom_nav" android:layout_width="wrap_content" android:layout_height="72dp" android:layout_gravity="bottom|center_horizontal" android:layout_marginBottom="14dp"/>
+</FrameLayout>

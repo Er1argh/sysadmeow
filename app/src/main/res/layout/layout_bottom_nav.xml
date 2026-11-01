@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="72dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_nav"
+    android:elevation="8dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="6dp"
+    tools:theme="@style/Theme.SysAdMeow">
+
+    <TextView
+        android:id="@+id/navHome"
+        android:layout_width="88dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_nav_unselected"
+        android:drawableTop="@drawable/ic_home"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="Коты"
+        android:textColor="@color/primary"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/navCart"
+        android:layout_width="88dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_nav_unselected"
+        android:drawableTop="@drawable/ic_cart"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="Корзина"
+        android:textColor="@color/primary"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/navProfile"
+        android:layout_width="88dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_nav_unselected"
+        android:drawableTop="@drawable/ic_profile"
+        android:gravity="center"
+        android:paddingTop="6dp"
+        android:text="Профиль"
+        android:textColor="@color/primary"
+        android:textSize="11sp" />
+</LinearLayout>
